@@ -8,4 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- Helps linter to find auto-generated files. -->
+    <Compile Include="obj\Debug\net8.0-windows\**\*.g.cs" />
+  </ItemGroup>
+
 </Project>
