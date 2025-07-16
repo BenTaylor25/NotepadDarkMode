@@ -1,6 +1,4 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
 
 namespace NotepadDarkMode;
 
@@ -10,4 +8,3 @@ namespace NotepadDarkMode;
 public partial class App : Application
 {
 }
-
