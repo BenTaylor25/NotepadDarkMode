@@ -12,5 +12,8 @@ mkdir Docs
 
 git init
 git add .
-git commit -m "project init"
+git commit -m "Project init"
+
+git remote add origin https://github.com/BenTaylor25/NotepadDarkMode.git
+git push origin master
 ```
