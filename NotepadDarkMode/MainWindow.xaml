@@ -10,7 +10,9 @@
     Height="450"
     Width="800"
 >
-    <Grid>
+    <Grid
+        Background="#2d2d2d"
+    >
 
     </Grid>
 </Window>
