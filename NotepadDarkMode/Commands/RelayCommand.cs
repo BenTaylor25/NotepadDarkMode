@@ -2,13 +2,9 @@ using System.Windows.Input;
 
 namespace NotepadDarkMode.Commands;
 
-/// <summary>
-/// I don't know if I actually need this but it's generally recommended,
-/// so I'll keep it for now.
-/// </summary>
 public class RelayCommand(
     Action<object?> execute,
-    Predicate<object?> canExecute
+    Predicate<object?>? canExecute = null
     ) : ICommand
 {
     private readonly Action<object?> _execute = execute;

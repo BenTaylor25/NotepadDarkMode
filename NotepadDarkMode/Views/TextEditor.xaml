@@ -9,7 +9,16 @@
     d:DesignWidth="50"
 >
     <StackPanel>
-        <Button MinHeight="25" Content="{Binding TempProperty}" />
-        <Button Content="hi" />
+
+        <Button
+            Content="{Binding TempProperty}"
+            Command="{Binding UpdateTempCommand}"
+            MinHeight="25"
+        />
+
+        <Button
+            Content="hi"
+        />
+
     </StackPanel>
 </UserControl>
