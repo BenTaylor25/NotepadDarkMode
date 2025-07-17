@@ -21,12 +21,21 @@
     >
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
         <views:TextEditor Grid.Row="0" DataContext="{Binding TextStateVM}" />
 
-        <TextBlock Grid.Row="1" Text="{Binding TextStateVM.TextEditorText}" />
+        <!-- Footer Bar -->
+        <Grid
+            Grid.Row="1"
+            Background="Gray"
+        >
+            <TextBlock
+                Text="{Binding TextStateVM.TextEditorText}"
+                VerticalAlignment="Center"
+            />
+        </Grid>
 
     </Grid>
 </Window>
