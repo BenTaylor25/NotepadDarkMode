@@ -2,7 +2,7 @@ namespace NotepadDarkMode.ViewModels;
 
 public class TextStateVM : ViewModelBase
 {
-    private string _textEditorText = "hello";
+    private string _textEditorText = "";
     public string TextEditorText
     {
         get => _textEditorText;
