@@ -10,8 +10,10 @@
 
   <!-- DesignTimeBuild check prevents double compile warnings. -->
   <ItemGroup Condition="'$(DesignTimeBuild)' == 'true'">
+
     <!-- Helps linter to find auto-generated files. -->
     <Compile Include="obj\Debug\net8.0-windows\**\*.g.cs" />
+
   </ItemGroup>
 
 </Project>
