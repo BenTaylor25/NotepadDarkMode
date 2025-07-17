@@ -24,9 +24,9 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <views:TextEditor Grid.Row="0" />
+        <views:TextEditor Grid.Row="0" DataContext="{Binding TextStateVM}" />
 
-        <TextBlock Grid.Row="1" Text="{Binding TempProperty}" />
+        <TextBlock Grid.Row="1" Text="{Binding TextStateVM.TextEditorText}" />
 
     </Grid>
 </Window>

@@ -10,14 +10,8 @@
 >
     <StackPanel>
 
-        <Button
-            Content="{Binding TempProperty}"
-            Command="{Binding UpdateTempCommand}"
-            MinHeight="25"
-        />
-
-        <Button
-            Content="hi"
+        <TextBox
+            Text="{Binding TextEditorText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
         />
 
     </StackPanel>
