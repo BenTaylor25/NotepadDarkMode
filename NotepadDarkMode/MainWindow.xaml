@@ -16,15 +16,16 @@
         <vm:MainVM />
     </Window.DataContext>
 
-    <Grid
-        Background="#2d2d2d"
-    >
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
-        <views:TextEditor Grid.Row="0" DataContext="{Binding TextStateVM}" />
+        <views:TextEditor
+            Grid.Row="0"
+            DataContext="{Binding TextStateVM}"
+        />
 
         <!-- Footer Bar -->
         <Grid
@@ -32,7 +33,7 @@
             Background="Gray"
         >
             <TextBlock
-                Text="{Binding TextStateVM.TextEditorText}"
+                Text="Hello, World!"
                 VerticalAlignment="Center"
             />
         </Grid>
