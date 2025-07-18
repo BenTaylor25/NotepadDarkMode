@@ -10,30 +10,30 @@
     <Menu>
 
         <MenuItem Header="_File">
-            <MenuItem Header="_New" />
-            <MenuItem Header="New _Window" />
-            <MenuItem Header="_Open..." />
-            <MenuItem Header="_Save" />
-            <MenuItem Header="Save _As..." />
+            <MenuItem Header="_New" InputGestureText="Ctrl+N" />
+            <MenuItem Header="New _Window" InputGestureText="Ctrl+Shift+N" />
+            <MenuItem Header="_Open..." InputGestureText="Ctrl+O" />
+            <MenuItem Header="_Save" InputGestureText="Ctrl+S" />
+            <MenuItem Header="Save _As..." InputGestureText="Ctrl+Shift+S" />
             <Separator />
             <MenuItem Header="E_xit" />
         </MenuItem>
 
         <MenuItem Header="_Edit">
-            <MenuItem Header="_Undo" />
-            <MenuItem Header="_Redo" />
+            <MenuItem Header="_Undo" InputGestureText="Ctrl+Z" />
+            <MenuItem Header="_Redo" InputGestureText="Ctrl+Shift+Z" />
             <Separator />
-            <MenuItem Header="Cu_t" />
-            <MenuItem Header="_Copy" />
-            <MenuItem Header="_Paste" />
+            <MenuItem Header="Cu_t" InputGestureText="Ctrl+X" />
+            <MenuItem Header="_Copy" InputGestureText="Ctrl+C" />
+            <MenuItem Header="_Paste" InputGestureText="Ctrl+V" />
             <!-- This alt key is different to default Notepad. -->
-            <MenuItem Header="_Delete" />
+            <MenuItem Header="_Delete" InputGestureText="Del" />
             <Separator />
-            <MenuItem Header="_Find" />
+            <MenuItem Header="_Find..." InputGestureText="Ctrl+F" />
             <!-- Find Next and Find Previous? -->
-            <MenuItem Header="Find and _Replace" />
+            <MenuItem Header="Find and _Replace..." InputGestureText="Ctrl+H" />
             <Separator />
-            <MenuItem Header="Select _All" />
+            <MenuItem Header="Select _All" InputGestureText="Ctrl+A" />
         </MenuItem>
 
         <MenuItem Header="_Settings" />
