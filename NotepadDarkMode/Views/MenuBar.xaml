@@ -1,0 +1,22 @@
+<UserControl
+    x:Class="NotepadDarkMode.Views.MenuBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d"
+>
+
+    <Menu>
+        <MenuItem Header="_File">
+            <MenuItem Header="_New" />
+            <MenuItem Header="New _Window" />
+            <MenuItem Header="_Open..." />
+            <MenuItem Header="_Save" />
+            <MenuItem Header="Save _As..." />
+            <Separator />
+            <MenuItem Header="E_xit" />
+        </MenuItem>
+    </Menu>
+
+</UserControl>

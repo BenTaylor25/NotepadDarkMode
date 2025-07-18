@@ -18,18 +18,21 @@
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
             <RowDefinition Height="*" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
+        <views:MenuBar Grid.Row="0" />
+
         <views:TextEditor
-            Grid.Row="0"
+            Grid.Row="1"
             DataContext="{Binding TextStateVM}"
         />
 
         <!-- Footer Bar -->
         <Grid
-            Grid.Row="1"
+            Grid.Row="2"
             Background="Gray"
         >
             <TextBlock
