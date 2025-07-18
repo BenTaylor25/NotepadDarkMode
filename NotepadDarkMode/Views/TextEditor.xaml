@@ -5,20 +5,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     mc:Ignorable="d"
-    d:DesignHeight="30"
-    d:DesignWidth="50"
 >
-    <StackPanel>
-
-        <Button
-            Content="{Binding TempProperty}"
-            Command="{Binding UpdateTempCommand}"
-            MinHeight="25"
-        />
-
-        <Button
-            Content="hi"
-        />
-
-    </StackPanel>
+    <TextBox
+        Text="{Binding TextEditorText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+        TextWrapping="Wrap"
+        AcceptsReturn="True"
+        VerticalScrollBarVisibility="Visible"
+        Background="#2d2d2d"
+        Foreground="#ffffff"
+    />
 </UserControl>

@@ -16,17 +16,27 @@
         <vm:MainVM />
     </Window.DataContext>
 
-    <Grid
-        Background="#2d2d2d"
-    >
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
-        <views:TextEditor Grid.Row="0" />
+        <views:TextEditor
+            Grid.Row="0"
+            DataContext="{Binding TextStateVM}"
+        />
 
-        <TextBlock Grid.Row="1" Text="{Binding TempProperty}" />
+        <!-- Footer Bar -->
+        <Grid
+            Grid.Row="1"
+            Background="Gray"
+        >
+            <TextBlock
+                Text="Hello, World!"
+                VerticalAlignment="Center"
+            />
+        </Grid>
 
     </Grid>
 </Window>
