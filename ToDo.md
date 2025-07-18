@@ -8,17 +8,19 @@
 
 - Tool Bar
     - File
-
-- Scrollable main section
+    - Edit
+    - Format (or merge with View?)
+    - View
 
 - Footer
     - line + column numbers
 
 ## Text Editing
 
-- Text representation
-- Display each line
-- Cursor handling
+- Display each line (setting)
+
+- Review text representation?
+- Cursor handling?
 
 ## Extra Functionality
 
