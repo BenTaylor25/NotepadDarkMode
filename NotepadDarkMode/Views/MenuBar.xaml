@@ -8,6 +8,7 @@
 >
 
     <Menu>
+
         <MenuItem Header="_File">
             <MenuItem Header="_New" />
             <MenuItem Header="New _Window" />
@@ -17,6 +18,26 @@
             <Separator />
             <MenuItem Header="E_xit" />
         </MenuItem>
+
+        <MenuItem Header="_Edit">
+            <MenuItem Header="_Undo" />
+            <MenuItem Header="_Redo" />
+            <Separator />
+            <MenuItem Header="Cu_t" />
+            <MenuItem Header="_Copy" />
+            <MenuItem Header="_Paste" />
+            <!-- This alt key is different to default Notepad. -->
+            <MenuItem Header="_Delete" />
+            <Separator />
+            <MenuItem Header="_Find" />
+            <!-- Find Next and Find Previous? -->
+            <MenuItem Header="Find and _Replace" />
+            <Separator />
+            <MenuItem Header="Select _All" />
+        </MenuItem>
+
+        <MenuItem Header="_Settings" />
+
     </Menu>
 
 </UserControl>
