@@ -9,3 +9,5 @@ so my poor eyes suffer.
 
 Introducing Notepad Dark Mode: an original-Notepad clone that you can use
 without wearing sunglasses.
+
+![Early Screenshot of Application](./Docs/Img/EarlyScreenshot.png)
