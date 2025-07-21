@@ -15,7 +15,7 @@
         <!-- Edit -->
         <StaticResource ResourceKey="MenuBarEdit" />
 
-        <!-- Setting -->
+        <!-- Settings -->
         <MenuItem Header="_Settings" />
 
     </Menu>
