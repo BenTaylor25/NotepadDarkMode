@@ -1,0 +1,24 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Package
+        Id="BenTaylor.NotepadDarkMode"
+        Name="Notepad Dark Mode"
+        Manufacturer="BenTaylor25"
+        Version="0.0.1"
+    >
+        <File
+            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.deps.json"
+        />
+        <File
+            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.exe"
+        />
+        <File
+            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.dll"
+        />
+        <File
+            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.pdb"
+        />
+        <File
+            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.runtimeconfig.json"
+        />
+    </Package>
+</Wix>
