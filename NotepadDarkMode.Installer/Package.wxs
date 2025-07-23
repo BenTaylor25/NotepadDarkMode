@@ -4,21 +4,80 @@
         Name="Notepad Dark Mode"
         Manufacturer="BenTaylor25"
         Version="0.0.1"
+        Compressed="yes"
     >
-        <File
-            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.deps.json"
-        />
-        <File
-            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.exe"
-        />
-        <File
-            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.dll"
-        />
-        <File
-            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.pdb"
-        />
-        <File
-            Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.runtimeconfig.json"
-        />
+
+        <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+        <StandardDirectory Id="ProgramFilesFolder">
+            <Directory Id="INSTALLFOLDER" Name="NotepadDarkMode">
+                <Component
+                    Id="AppFiles"
+                    Guid="2dba8a97-9de6-40be-9ed5-d9163a43db9b"
+                >
+                    <File
+                        Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.exe"
+                        Id="MainExe"
+                    />
+                    <File
+                        Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.dll"
+                    />
+                    <File
+                        Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.pdb"
+                    />
+                    <File
+                        Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.runtimeconfig.json"
+                    />
+                    <File
+                        Source="../NotepadDarkMode/bin/Release/net8.0-windows/NotepadDarkMode.deps.json"
+                    />
+                </Component>
+            </Directory>
+        </StandardDirectory>
+
+        <StandardDirectory Id="ProgramMenuFolder">
+            <Directory
+                Id="ApplicationProgramsFolder"
+                Name="Notepad Dark Mode"
+            >
+                <Component
+                    Id="StartMenuShortcut"
+                    Guid="ea493183-f1f6-4836-9e77-15cd402bcfce"
+                >
+
+                    <Shortcut
+                        Id="StartMenuShortcut"
+                        Name="Notepad Dark Mode"
+                        Target="[INSTALLFOLDER]NotepadDarkMode.exe"
+                        WorkingDirectory="INSTALLFOLDER"
+                        />
+
+                    <RemoveFolder
+                        Id="RemoveShortcutFolder"
+                        On="uninstall"
+                    />
+
+                    <RegistryValue
+                        Root="HKCU"
+                        Key="Software\NotepadDarkMode"
+                        Name="installed"
+                        Type="integer"
+                        Value="1"
+                        KeyPath="yes"
+                    />
+
+                </Component>
+            </Directory>
+        </StandardDirectory>
+
+        <Feature
+            Id="ProductFeature"
+            Title="Notepad Dark Mode"
+            Level="1"
+        >
+            <ComponentRef Id="AppFiles" />
+            <ComponentRef Id="StartMenuShortcut" />
+        </Feature>
+
     </Package>
 </Wix>
