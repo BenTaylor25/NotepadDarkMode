@@ -50,7 +50,12 @@
                         Name="Notepad Dark Mode"
                         Target="[INSTALLFOLDER]NotepadDarkMode.exe"
                         WorkingDirectory="INSTALLFOLDER"
+                    >
+                        <Icon
+                            Id="Icon"
+                            SourceFile="..\NotepadDarkMode\Assets\Icons\NotepadDarkModeIcon.ico"
                         />
+                    </Shortcut>
 
                     <RemoveFolder
                         Id="RemoveShortcutFolder"
